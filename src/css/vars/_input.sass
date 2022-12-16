@@ -1,0 +1,23 @@
+
+$input-gutter: 8px !default
+$input-content-height: 34px !default
+$input-content-padding: 6px $input-gutter !default
+$input-border-radius: 4px !default
+$input-border-color: $color-stroke !default
+$input-border: 1px solid $input-border-color !default
+$input-background: $color-white !default
+$input-text-color: $color-black
+
+$textarea-line-height: 27px !default
+// (6 + 6) => top and bottom padding
+// (1 + 1) => top and bottom border
+$textarea-content-height: $textarea-line-height * 3 + (6 + 6) + (1 + 1) !default
+
+$selectbox-popup-top: 4px !default
+$selectbox-border-radius: 8px !default
+$selectitem-content-height: $input-content-height !default
+$selectitem-content-padding: 0 $input-gutter !default
+
+$edititem-columns: 2
+$edititem-wave-width: 20px
+$edititem-single-column-width: 100% / #{$edititem-columns} - #{$edititem-wave-width / 2}

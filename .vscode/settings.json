@@ -1,0 +1,23 @@
+{
+  "javascript.suggestionActions.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "10.40.72.101",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "workspace",
+      "database": "iiot",
+      "username": "digihua",
+      "password": "digihua@123"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+.dw-textbox
+  &.q-input .q-field__control
+    height: $input-content-height
+  .q-field__native
+    padding: $input-content-padding
+  &.q-field--labeled
+    height: $input-content-height * 2
+    padding-bottom: 0px
+    .q-field__inner
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+    .q-field__label
+      height: $input-content-height
+      top: -$input-content-height
+      line-height: $input-content-height
+      padding-right: 8px
+      width: 100%
+    .q-field__native
+      line-height: 24px
+      width: 100%
+
+  //////////////////$MISC$//////////////////
+  .q-field__native
+    @include text-caption-light
+  .q-field__native::placeholder
+    @include text-caption-light
+  &.q-field--labeled
+    .q-field__label
+      @include text-caption-regular
+  .q-field__control
+    border-radius: $input-border-radius
+    background: $input-background
+  &::after
+    content: none
+  &::before
+    transition: none
+    border: $input-border
+  &.q-field--labeled
+    &.q-field--float .q-field__label
+      transform: none
+      transition: none
+    &.q-field--error .q-field__label
+      animation: none
+  .q-field__bottom
+    // display: none
+    transform: translate(0px, 20px)
+    &--animated
+      // transform: none
+  &.dw-textbox-show-error
+    .q-field__append
+      //display: none;
+
+
+  /////////////////$THEMES$/////////////////
+  .q-field__control:hover::before
+    border-color: $input-border-color
+  .q-field__control:before
+    border-color: $input-border-color
+  &.dw-textbox-show-error
+    .q-field__control:hover::before
+      border-color: currentColor
+    .q-field__control:before
+      border-color: currentColor
+  &.q-field--labeled
+    .q-field__label
+      color: $color-black
+    .q-field__control
+      color: $input-border-color
+      border: 1px solid $input-border-color
+    .text-negative
+      border: 1px solid #C10015
+  .q-field__native::placeholder
+    color: $color-zambezi
+    background-color: green
+
+  &.disable
+    .q-field__control
+      background-color: rgb(238, 241, 247)

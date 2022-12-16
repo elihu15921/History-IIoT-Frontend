@@ -1,0 +1,80 @@
+$font-weights: (thin: 100, light: 300, regular: 400, medium: 500, bold: 700, black: 900)
+
+@mixin text-font($size, $weight)
+  font-weight: map-get($font-weights, $weight)
+  font-size: $size
+  font-style: normal
+  letter-spacing: 1px
+  text-align: left
+
+@mixin text-headline-thin
+  @include text-font(28px, thin)
+
+@mixin text-headline-light
+  @include text-font(28px, light)
+
+@mixin text-headline-regular
+  @include text-font(28px, regular)
+
+@mixin text-headline-medium
+  @include text-font(28px, medium)
+
+@mixin text-headline-bold
+  @include text-font(28px, bold)
+
+@mixin text-headline-black
+  @include text-font(28px, black)
+
+@mixin text-subtitle-thin
+  @include text-font(20px, thin)
+
+@mixin text-subtitle-light
+  @include text-font(20px, light)
+
+@mixin text-subtitle-regular
+  @include text-font(20px, regular)
+
+@mixin text-subtitle-medium
+  @include text-font(20px, medium)
+
+@mixin text-subtitle-bold
+  @include text-font(20px, bold)
+
+@mixin text-subtitle-black
+  @include text-font(20px, black)
+
+@mixin text-caption-thin
+  @include text-font(14px, thin)
+
+@mixin text-caption-light
+  @include text-font(14px, light)
+
+@mixin text-caption-regular
+  @include text-font(14px, regular)
+
+@mixin text-caption-medium
+  @include text-font(14px, medium)
+
+@mixin text-caption-bold
+  @include text-font(14px, bold)
+
+@mixin text-caption-black
+  @include text-font(14px, black)
+
+@mixin text-content-thin
+  @include text-font(12px, thin)
+
+@mixin text-content-light
+  @include text-font(12px, light)
+
+@mixin text-content-regular
+  @include text-font(12px, regular)
+
+@mixin text-content-medium
+  @include text-font(12px, medium)
+
+@mixin text-content-bold
+  @include text-font(12px, bold)
+
+@mixin text-content-black
+  @include text-font(12px, black)

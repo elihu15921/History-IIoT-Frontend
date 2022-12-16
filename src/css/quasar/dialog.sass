@@ -1,0 +1,144 @@
+.dialogTitle
+    font-weight: bold
+    // border: 1px solid red
+.q-dialog__inner
+    padding: 0
+
+.q-dialog__inner--minimized > div
+    max-height: 100vh
+
+.bg-dialog
+    width: 466px
+    min-width: 466px
+    background-color: white
+    &-fullHeight
+        height: 100%
+        width: 600px
+        min-width: 600px
+        background-color: white
+        border-radius: 0 !important
+        .dialog-title
+            display: flex
+            flex-direction: row
+            padding: 16px 16px 8px 16px
+        .prevBtn
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 8px 0 0
+            background-color: white
+            border: none
+            cursor: pointer
+            img
+                width: 20px
+        .dialog-content
+            padding: 0 16px 16px 16px
+            height: calc(100vh - 122px)
+        .uploadFile
+            display: flex
+            align-items: center
+            justify-content: center
+            // border: 1px solid red
+            .subtitle
+                width: 84px
+                height: 34px
+                line-height: 34px
+                // border: 1px solid red
+            .displayFileNameInput
+                width: 100%
+                height: 34px
+                padding-left: 8px
+                border: 1px solid $color-stroke
+                border-radius: 4px
+            input::placeholder
+                color: $color-stroke
+            .selectFileBtn
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 34px
+                height: 34px
+                background-color: $color-casablanca
+                margin: 0 0 0 8px
+                border-radius: 4px
+                transition: 0.2s
+                cursor: pointer
+                &:hover
+                    background-color: rgb(245, 177, 76)
+                .selectFileImg
+                    width: 20px
+                    // border: 1px solid red
+        .searchBar
+            display: flex
+            flex-direction: row
+            align-items: center
+            // justify-content: center
+            margin: 0 0 8px 0
+            // border: 1px solid red
+            .searchContainer
+                display: flex
+                align-items: center
+                justify-content: center
+                // border: 1px solid red
+                .searchInput
+                    width: 476px
+                    height: 34px
+                    padding-left: 8px
+                    border: 1px solid $color-stroke
+                    border-radius: 4px
+                input::placeholder
+                    color: $color-stroke
+                .searchBtn
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 34px
+                    height: 34px
+                    margin: 0 0 0 8px
+                    border-radius: 4px
+                    border: none
+                    background-color: $color-cancel
+                    transition: 0.2s
+                    cursor: pointer
+                    z-index: 1
+                    // border: 1px solid red
+                    &:hover
+                        background-color: rgba(240, 240, 240)
+                    .searchIcon
+                        width: 20px
+                        // border: 1px solid red
+        .tablePagination_dialog
+            height: 34px
+            // border: 1px solid red
+            .container
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                // border: 1px solid red
+                input
+                    width: 40px
+                    height: 34px
+                    text-align: center
+                    border: 1px solid $color-stroke
+                    border-radius: 4px
+                img
+                    width: 20px
+                    margin: 0 8px
+                    cursor: pointer
+                // border: 1px solid red
+                .slash
+                    width: 34px
+                    height: 21px
+                    line-height: 21px
+                    margin: 0 8px
+                    text-align: center
+                // border: 1px solid blue
+                .totalPages
+                    width: 40px
+                    height: 34px
+                    line-height: 34px
+                    text-align: center
+                // border: 1px solid blue
+
+    

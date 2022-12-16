@@ -1,0 +1,42 @@
+.iconBtn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 34px
+  height: 34px
+  line-height: 34px
+  margin: 0 8px 0 0
+  cursor: pointer
+  transition: 0.2s
+  border-radius: 50%
+  // border: 1px solid red
+  &:hover
+    background-color: rgba(150, 150, 150, 0.1)
+  img
+    width: 20px
+    height: 20px
+  &-disable
+    cursor: not-allowed
+    &:hover
+      background-color: white
+
+.delBtn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 34px
+  height: 34px
+  line-height: 34px
+  margin: 0 8px 0 0
+  background-color: $color-red
+  cursor: pointer
+  transition: 0.2s
+  border-radius: 4px
+  &:hover
+    background-color: rgba(150, 150, 150, 0.1)
+  img
+    width: 20px
+    height: 20px
+  &-disable
+    cursor: not-allowed
+    background-color: $color-red-light

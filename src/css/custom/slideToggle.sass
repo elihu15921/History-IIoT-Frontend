@@ -1,0 +1,20 @@
+.slideToggle
+  cursor: pointer
+  display: flex
+  align-items: center
+  width: 68px
+  height: 34px
+  background-color: rgb(96, 96, 96)
+  border-radius: 100px
+  .switchBtn
+    width: 26px
+    height: 26px
+    margin: 0 0 0 5px
+    border-radius: 100%
+    transition: 0.2s
+    background-color: $color-white
+.switchOn // slide toggle 按鈕 active狀態時
+  .slideToggle
+    background-color: $color-row-hover
+    .switchBtn
+      transform: translate(33px, 0px)
